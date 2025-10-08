@@ -115,7 +115,7 @@ Through this project, I strengthened:
 👤 Karthik Somepalli
 📧 karthiksomepalli25@gmail.com
 
-🌐 GitHub: karthik-somepalli
+🌐 GitHub: https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B1k8lBupFSMuPcIpBkkKj8Q%3D%3D
 
 “Turning data noise into business intelligence.”
 
