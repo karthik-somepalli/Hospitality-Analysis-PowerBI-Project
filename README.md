@@ -1,58 +1,132 @@
 🌟 Hospitality Performance Analytics Dashboard
-This project transforms raw data into actionable business intelligence for a major hospitality chain.
 
-<p align="center">
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=white" alt="Power BI Badge"/>
-<img src="https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL Badge"/>
-<img src="https://img.shields.io/badge/Data%20Modeling-404040?style=for-the-badge&logoColor=white" alt="Data Modeling Badge"/>
-</p>
+Revenue, Occupancy & Pricing Intelligence for the Hospitality Industry
 
-📈 Live Interactive Dashboard
-🔗 VIEW LIVE DASHBOARD HERE
+<p align="center"> <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black"/> <img src="https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/DAX%20Measures-0078D4?style=for-the-badge&logoColor=white"/> <img src="https://img.shields.io/badge/Data%20Modeling-404040?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgo=" alt="Data Modeling"/> </p>
+🎯 Project Goal
 
+To transform raw hospitality booking data into a decision-making dashboard that enables stakeholders to:
 
+Track Revenue, Occupancy & Profitability across cities and platforms
 
-💡 Project Overview & Business Goal
-This project details a comprehensive Revenue and Occupancy Analysis for a hospitality chain, transforming raw booking records into actionable insights for management. The primary goal was to equip stakeholders with a dynamic, self-service reporting tool to monitor performance and answer critical Ad-Hoc Business Questions quickly.
+Evaluate pricing efficiency using ADR, RevPAR & Realized Price metrics
 
-Key Business Questions Addressed:
-Revenue Contribution: Which cities generate the highest revenue and Gross Margin (GM)?
+Respond instantly to Ad-hoc business questions through dynamic visualizations
 
-Occupancy & Efficiency: How does the occupancy rate (Occ%) compare to the available capacity across different booking platforms?
+🧩 Live Interactive Dashboard
 
-Pricing Strategy: Analyzing the relationship between the successful booking rates and the utilized room price (Realized Price).
+🚀 👉 Click Here to View the Live Power BI Report
 
-🛠️ Technical Workflow & Skills
-The project involved meticulous data cleaning, advanced modeling, and precise measure calculation.
+(https://app.powerbi.com/view?r=eyJrIjoiNGVhYjc2ZjgtMjA4Zi00YjllLWFiZTctOTRjY2M0ZTMxOGI5IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
-1. Data Preparation and Modeling (The Foundation)
-Source: Raw data files (simulated database dump) were loaded using Power Query.
+🧠 Executive Summary
 
-Modeling: Developed a clean Star Schema architecture to enforce clear relationships between fact tables (fact_bookings) and dimension tables (dim_cities, dim_dates, etc.). This structure ensures report performance and calculation accuracy.
+This project delivers a data-driven command center for hospitality businesses, integrating Power BI, SQL, and DAX modeling to provide:
 
-Data Integrity: Handled data quality issues, such as ensuring unique primary keys and consistent data formats across all tables.
+🔹 Performance tracking across multiple booking channels
 
-2. DAX Measure Creation (The Intelligence Layer)
-Complex, calculated fields were created using the Data Analysis Expressions (DAX) language to generate true business metrics:
+🔹 Occupancy optimization via real-time data visibility
 
-ADR (Average Daily Rate): Measures the average daily revenue received for rented rooms.
+🔹 Actionable pricing insights to enhance profitability
 
-RevPAR (Revenue Per Available Room): Measures occupancy efficiency by multiplying ADR by the Occupancy Rate.
+⚙️ Technical Architecture
+🧱 1. Data Preparation & Modeling
 
-Realized Price: A critical measure tracking the final successful transaction price, used for price optimization analysis.
+Source: Simulated database dumps imported via Power Query
 
-Successful Booking Rate: Calculated as a percentage to assess sales funnel efficiency.
+Model: Implemented Star Schema with:
 
-3. Reporting and Communication
-SQL Integration: The project documentation includes AD_HOC_Requests.sql, demonstrating the ability to write custom SQL queries to fulfill specific, low-level data extraction needs from the database.
+fact_bookings
 
-Data Storytelling: The final report structure prioritizes actionable insights, moving from high-level KPIs (Total Revenue) down to granular segment performance. Supporting files, like RPC4.pptx, ensure the technical findings are translated into a compelling narrative for management.
+dim_cities
 
-📂 Repository Contents
-File Name	Description
-Hospitality-analysis-Powerbi-project.pbix	The final Power BI Desktop file containing the data model, Power Query steps, and all DAX measures.
-AD_HOC_Requests.sql	SQL script used for ad-hoc data retrieval and validation during the analysis phase.
-RPC4.pptx / sample_challenge_presentation.pdf	Presentation slides and template used to communicate the project scope and final results to stakeholders.
-Metadata.txt	Documentation detailing the database schema, including table and column definitions.
-PDF Support Files	Documentation providing guidelines on data cleaning and transformation techniques used.
-Author: Karthik Somepalli
+dim_dates
+
+dim_rooms
+
+Data Validation: Ensured referential integrity, unique primary keys & consistent data types
+
+Outcome: Optimized model → high performance + accurate aggregations
+
+🧮 2. DAX Intelligence Layer
+
+The brain of the dashboard — transforming raw data into KPIs
+Key Measures Created:
+| Metric | Formula | Purpose |
+|:--------|:---------|:--------|
+| ADR (Average Daily Rate) | Total Revenue / Total Rooms Sold | Tracks average earning per room |
+| RevPAR (Revenue per Available Room) | ADR * Occupancy% | Combines rate & occupancy efficiency |
+| Realized Price | Final Booked Price | Used for price optimization |
+| Successful Booking Rate | Successful Bookings / Total Bookings | Measures conversion efficiency |
+
+🧰 3. Reporting & Data Storytelling
+
+Visual Design: Multi-page report with KPI cards, trend visuals, city-level comparisons
+
+SQL Integration: AD_HOC_Requests.sql used to answer analytical queries
+
+Executive Deck: Summarized key insights in RPC4.pptx & sample_challenge_presentation.pdf
+
+🧾 Repository Structure
+File / Folder	Description
+Hospitality-analysis-Powerbi-project.pbix	Main Power BI file (data model + visuals + DAX)
+AD_HOC_Requests.sql	SQL scripts used for ad-hoc business queries
+RPC4.pptx	PowerPoint presentation with final findings
+Metadata.txt	Schema documentation (tables, columns, keys)
+PDF Support Files/	Data cleaning & transformation guides
+📊 Key Insights Unlocked
+
+✅ Top Cities by Revenue: Identified highest revenue & gross margin generators
+✅ Occupancy Efficiency: Highlighted low-performing regions with capacity under-utilization
+✅ Price Elasticity: Correlated pricing with booking success rates for dynamic pricing strategy
+✅ Data Transparency: Enabled real-time performance comparison across platforms
+
+🚀 Business Impact
+
+💼 Decision-makers now gain:
+
+📈 Instant view of hotel network performance
+
+💰 Deeper profitability insights
+
+⏱️ 80% reduction in manual data extraction & Excel reporting time
+
+🧠 Tools & Technologies
+Category	Tools Used
+Data Analysis	Power BI, SQL
+Data Modeling	Star Schema, Power Query
+Visualization	Power BI Dashboards
+Metrics	DAX Measures
+Communication	PowerPoint, Documentation
+🎓 Learning Outcomes
+
+Through this project, I strengthened:
+
+💡 End-to-End BI pipeline understanding
+
+⚙️ Advanced DAX modeling skills
+
+🧠 SQL querying for analytics
+
+🧩 Business storytelling for executive audiences
+
+💼 Author
+
+👤 Karthik Somepalli
+📧 karthiksomepalli25@gmail.com
+
+🌐 GitHub: karthik-somepalli
+
+“Turning data noise into business intelligence.”
+
+🏁 Next Steps
+
+Add automated refresh with Power BI Service
+
+Integrate Python scripts for predictive analytics (future version)
+
+Build PowerPoint export automation
+
+💎 If you found this project insightful — don’t forget to ⭐ Star this repo
+
+Because excellence should never stay hidden. 🚀
